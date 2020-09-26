@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book list project</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css' />
+
+<style type="text/css">
+        * {
+            font-family: 'Roboto Mono', monospace;
+        }
+        body{
+            position: relative;
+            min-height: 100vh;
+        }
+        .title {
+            font-weight: 600;
+        }
+        #wrapper {
+            border: 1px solid #c2c2c2;
+            padding: 24px;
+            margin: 24px auto;
+        }
+        .success,
+        .error {
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 13px;
+            text-align: center;
+            border-radius: 5px;
+                      margin: 10px auto;
+        }
+        .success {
+            background: #008528;
+        }
+        .error {
+            background: #ff0000;
+        }
+        .delete{
+            color:#ff0000;
+        }
+
+        #show-validation-msg{
+            text-align: center;
+        }
+
+        button{
+            font-size: 16px !important;
+        }
+
+        .footer{
+            font-size: 14px;
+            padding: 8px;
+            background: #f1f1f1;
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <section class="container" id="wrapper">
+        <h1 class="title">Add book</h1>
+        <form id="book-form">
+            <div>
+                <label for="book-title">Book Title</label>
+                <input type="text" name="book-title" id="book-title" class="u-full-width">
+            </div>
+            <div>
+                <label for="book-author">Book Author</label>
+                <input type="text" name="book-author" id="book-author" class="u-full-width">
+            </div>
+            <div>
+                <label for="ISBN">ISBN</label>
+                <input type="text" name="ISBN" id="ISBN" class="u-full-width">
+            </div>
+            <button type="submit" class="button-primary u-full-width" id="submit-form-button">Add Book</button>
+           
+        </form>
+    </section>
+    <hr>
+    <section class="container">
+        <div class="row">
+            <div class="twelve columns">
+                <table class="u-full-width">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>ISBN</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer u-full-width">
+ 
+    Developed by <a href="https://grohit.com/" target="_blank">G Rohit</a>
+ 
+    </footer>
+    <!-- <script src="app.js"></script> -->
+    <script src="appES6.js"></script>
+    <!-- <script src="appES6.min.js"></script> -->
+</body>
+</html>

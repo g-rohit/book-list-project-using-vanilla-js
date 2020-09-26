@@ -89,7 +89,7 @@ class Store {
 
 books.forEach((book,index) =>{
   if (book.isbn === isbn) {
-    // books.splice(index,1);
+    books.splice(index,1);
 
   }  
 
